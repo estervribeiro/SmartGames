@@ -1,0 +1,675 @@
+/*  CSS  */
+
+
+/* PADRAO */
+
+ul, li, h1, p, body {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+table{
+    border: none;
+}
+
+body{
+    background-color: #1a1b1c !important;
+}
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+a:link, a:visited {
+    text-decoration-line: none;
+    color: red;
+}
+
+a:active{
+    text-decoration: underline;
+    color: red;
+}
+
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.oculta{
+    width: 100%;
+    height: 100px;
+}
+
+
+.redes_sociais{
+    width: 100px;
+    height: 300px;
+    position: fixed;
+    margin-top: -300px;
+}
+
+.redes_sociais img{
+    width: 80px;
+    height:80px;
+    margin-left: 1400px;
+}
+
+
+
+/* MENU */
+
+.caixa_menu{
+    width: 100%;
+    height: 130px;
+    z-index: 999;
+    position: fixed;
+    background-color: #1a1b1c;
+}
+
+.header{
+    width: 1400px;
+    height: 130px;
+    box-sizing: border-box;
+    background-color: #1a1b1c;
+}
+
+#logo{
+    
+    width: 150px;
+    height: 120px;
+    background-color: #1a1b1c;
+    float: left;
+    margin-right: 0px;
+    margin-left: 20px; 
+    margin-top: 10px;
+}
+
+#logo img{
+   width: 150px;
+    height: 120px;
+}
+
+    #menu{
+        width: 700px;
+        height: 90px;
+        background-color:#1a1b1c;
+        float: left;
+        box-sizing: border-box;
+        margin-top: 25px;
+    }
+
+    #menu ul{
+        width: 1000px;
+        height: inherit;
+        float: left;
+        margin-left: 20px;
+    }
+
+    #menu ul li{
+        width: 100px;
+        height: inherit;
+        list-style: none;
+        float: left;
+        margin-right: 20px;
+        background-color: #1a1b1c;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 30px;
+    }
+#menu ul li:hover{
+    background-color: black;
+    transition: 0.2s;
+    cursor: pointer;
+    border-bottom: solid 3px white;
+    border-right: solid 3px white;
+    border-radius: 8px;
+}
+
+.login{
+    width: 140px;
+    height: 100px;
+    color: red;
+    float: left;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.logintxt{
+    height: 15px;
+}
+
+.botaook{
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+/* SLIDER */
+
+.caixa_slider{
+    margin-top: 60px;
+    width: 1400px;
+    height: 600px;
+    background-color: #1a1b1c;
+    z-index: 1;
+
+}
+
+/*CONTEUDO 1 */
+
+.conteudo1{
+    width: 1400px;
+    min-height: 1000px;
+    background-color: #1a1b1c;
+    overflow: hidden;
+    height: auto;
+}
+
+/*MENU LATERAL */
+
+.menu_lateral{
+    width: 200px;
+    min-height: inherit;
+    background-color: #1a1b1c;
+    float: left;
+    border-right: solid 1px red;
+
+}
+
+.menu_lateral ul{
+        width: 200px;
+        height: 50px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+.menu_lateral ul li{
+        width: 160px;
+        height: inherit;
+        list-style: none;
+        margin-right: 10px;
+        background-color: red;
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 10px;
+    }
+
+/* CATALOGO DE FILMES */
+
+.caixa_catalogo{
+    width: 1195px;
+    min-height: 1000px;
+    background-color: #1a1b1c;
+    float: left;
+    
+}
+.catalogo{
+    width: 250px;
+    height: 350px;
+    background-color: #1a1b1c;
+    border-right: 3px groove red;
+    border-bottom: 3px groove red;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.descricao{
+    width: 230px;
+    margin-left: 10px;
+    height: 155px;
+    background-color: #383535;
+    border-radius: 10px;
+
+    
+}
+
+.imagem_filme img{
+    width: 200px;
+    height: 150px;   
+    margin-left: -13px;
+}
+
+.titulo-preco{
+    font-size: 20px !important; 
+    font-weight: bold;
+}
+
+.descricao p{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding-top: 10px;
+    box-sizing: border-box;
+    
+}
+
+.detalhes{
+    margin-left: 175px;
+    color: red !important;
+}
+
+
+
+
+/* PG DAS LOJAS */
+
+.caixa_lojas{
+    width: 1195px;
+    min-height: 1000px;
+    background-color: #1a1b1c;
+    float: left; 
+    
+}
+
+.loja{
+    width: 1100px;
+    height: 300px;
+    margin-top: 50px;
+    text-align: center;
+    color: red;
+    border-bottom: double 1px red;
+}
+
+.unidade{
+    width: 400px;
+    height: 50px;
+    border-bottom: double 2px red;
+}
+
+.endereco{
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 40px;
+    float: left;
+}
+
+.endereco p {
+    margin-top: 10px;
+}
+
+.loja-fisica img{
+    width: 400px;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 10px;
+    float: left;
+}
+
+/* ATORES EM DESTAQUES  */
+
+.caixa_atores{
+    width: 1195px;
+    min-height: 1000px;
+    background-color: #1a1b1c;
+    float: left;
+    height: auto;
+}
+
+.holofote img{
+    width: 1150px;
+    height: 800px;
+    position: absolute;
+}
+.nome_ator{
+    color: white;
+    -webkit-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+position: absolute;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 370px;
+}
+
+.ator img{
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+    border-radius: 50%;
+    margin-top: 250px;
+    margin-left: 320px;
+    -webkit-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+
+}
+.coroa img{
+    width: 500px;
+    height: 100px;
+    z-index: 1;
+    margin-top: 140px;
+    margin-left: 320px;
+}
+
+
+.descricao_ator{
+    width: 1100px;
+    height: 500px;
+    background-color: #1a1b1c;
+    margin-top: 900px;
+    -webkit-box-shadow: 2px 0px 22px 12px rgba(15,15,4,1);
+-moz-box-shadow: 2px 0px 22px 12px rgba(15,15,4,1);
+box-shadow: 2px 0px 22px 12px rgba(15,15,4,1);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.descricao_ator img{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+
+.imagem{
+    width:400px;
+    height: 500px;
+    float: left;
+}
+
+.texto{
+    width: 700px;
+    height:500px;
+    float: left;
+    text-align: justify;
+    font-size: 20px;
+    line-height:38px; 
+    color: white;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+
+
+/* FILME DO MES   */
+
+.nome_filme{
+    color: white;
+    -webkit-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+position: absolute;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 465px; 
+}
+
+.descricao_ator img{
+    margin-top: 40px;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    
+}
+
+.imagem_filme_destaque{
+    width:400px;
+    height:600px;
+    float: left;
+}
+
+
+
+/* SOBRE NOS  */
+
+.caixasobre{
+    width: 1195px;
+    min-height: 1000px;
+    background-color: #1a1b1c;
+    float: left;
+    height: auto;
+    
+}
+
+.quemsomos{
+    width: 1000px;
+    height: 300px;
+    background-color: #1a1b1c;
+    -webkit-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+
+.imagem-sobre img{
+    height: 250px;
+    width: 200px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    float: left;
+}
+
+.titulo-sobre{
+    color: white;
+    height: 100px;
+    width: 750px;
+    font-size: 35px;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 250px;
+    padding-top: 20px;
+}
+
+.texto-sobre{
+    width: 750px;
+    height: 200px;
+    float: left;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    
+}
+
+
+/* PROMOÇÂOOOO */
+
+.caixa_promocao{
+    width: 1195px;
+    min-height: 1000px;
+    background-color: #1a1b1c;
+    float: left;
+    height: auto;
+}
+
+.promocao{
+    width: 300px;
+    height: 450px;
+    background-color: #1a1b1c;
+    border-right: 3px groove red;
+    border-bottom: 3px groove red;
+    margin-top: 50px;
+    margin-left: 90px;
+    float: left;
+    color: white;
+}
+
+.descricao-promocao{
+    width: 250px;
+    height: 200px;
+    background-color:#383535;
+    margin-left: 30px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    border-radius: 10px;
+    color: red;
+}
+
+.imagem_promocao img{
+    width: 200px;
+    height: 200px;
+    background-color: #1a1b1c;
+    margin-left: 20px;
+}
+
+.nomedofilme{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    color: white;
+}
+
+.preco-antigo{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    color: grey;
+    text-decoration-line: line-through;
+}
+
+.preco-novo{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    color: white;
+
+    
+}
+/* FALE CONOSCO */
+
+.caixa_formulario{
+    width: 1195px;
+    min-height: 1000px;
+    background-color: #1a1b1c;
+    float: left;
+    height: auto;
+}
+
+.titulo-pagina{
+    width: inherit;
+    height: 150px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.formulario{
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.tabelaDados{
+    width: 700px;
+    min-height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border: none;
+}
+
+.areatxt{
+    width: 400px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.btnSalvar{
+    width: 80px;
+    height: 50px;
+    border-radius: 6px;
+
+}
+
+/*  RODAPÈÈÈÈ */
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+.caixa_footer{
+    width: 1500px;
+    height: 200px;
+    background-color: black;
+}
+
+
+
+.logofooter img{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 50px;
+    float: left;
+    margin-right: 100px;
+}
+
+.dadosDescricao{
+    width: 200px;
+    height: 150px;
+    float: left;
+    color: red;
+    margin-right: 10px;
+    
+}
+
+.dadosDescricao p {
+    margin-top: 10px;
+    
+}
+
+.map{
+    height: 150px;
+    width: 100px;
+    margin-top: 20px;
+    float: left;
+}
+
+/* css do slider */
+
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); 
+    }
+    
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 052 css*/
+.jssorb052 .i {position:absolute;cursor:pointer;}
+.jssorb052 .i .b {fill:#fff;fill-opacity:1;}
+.jssorb052 .i:hover .b {fill-opacity:.7;}
+.jssorb052 .iav .b {fill-opacity: 1;}
+.jssorb052 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 053 css*/
+.jssora053 {display:block;position:absolute;cursor:pointer;}
+.jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
+.jssora053:hover {opacity:.8;}
+.jssora053.jssora053dn {opacity:.5;}
+.jssora053.jssora053ds {opacity:.3;pointer-events:none;}
+
+
+
