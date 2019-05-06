@@ -80,27 +80,22 @@
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1800px;height:600px;overflow:hidden;">
            
             <div>
-                <img data-u="image" src="imagem/venon.jpeg" alt="venon" title="venon" />
-                <div data-ts="flat" data-p="1360" style="position:absolute;top:0px;left:0px;width:1800px;height:600px;overflow:hidden;">   
-                </div>
-            </div>
-            <div>
-                <img data-u="image" src="imagem/Malevola-banner-04abr2014-01.jpg" alt="Malevola" title="Malevola"/>
+                <img data-u="image" src="imagem/banner_top_God-Of-War_08-01.webp" alt="God-Of-War" title="God-Of-War"/>
                 <div data-ts="flat" data-p="1360" style="position:absolute;top:0px;left:0px;width:1800px;height:600px;overflow:hidden;">
                 </div>
             </div>
             <div>
-                <img data-u="image" src="imagem/jumanji%20-%20bem-vindo%20%C3%A0%20selva.png" alt="jumanji" title="jumanji"/>
+                <img data-u="image" src="imagem/call-of-duty-advanced-warfare-game-hd-1920x1080.jpg" alt="call-of-duty" title="call-of-duty"/>
                 <div data-ts="flat" data-p="1360" style="position:absolute;top:0px;left:0px;width:1800px;height:600px;overflow:hidden;">
                 </div>
             </div>
             <div>
-                <img data-u="image" src="imagem/transformers_the_last_knight_4k_banner-2560x1440.jpg" alt="transformers" title="transformers" />
+                <img data-u="image" src="imagem/como-jogar-fortnite-battle-royale.jpg" alt="fortnite-battle-royale" title="fortnite-battle-royale" />
                 <div data-ts="flat" data-p="1360" style="position:absolute;top:0px;left:0px;width:1800px;height:600px;overflow:hidden;">
                 </div>
             </div>
             <div>
-                <img data-u="image" src="imagem/harry-potter-banner-11.jpg" alt="harry-potter" title="harry-potter" />
+                <img data-u="image" src="imagem/Spider-Man_PS4_Preview_Glass_1532954583.jpg" alt="Spider-Man" title="Spider-Man" />
                 <div data-ts="flat" data-p="1360" style="position:absolute;top:0px;left:0px;width:1800px;height:600px;overflow:hidden;">
                 </div>
             </div>

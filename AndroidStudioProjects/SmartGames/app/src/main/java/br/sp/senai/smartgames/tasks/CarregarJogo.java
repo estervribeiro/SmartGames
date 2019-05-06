@@ -42,21 +42,22 @@ public class CarregarJogo extends AsyncTask {
 
         try {
             //criando a url usada para se conectar com a api
-            URL url = new URL("http://10.107.134.64:8080/jogos");
+            URL url = new URL("http://10.107.144.11:8080/jogos");
 
-            //abrindo a conexão para a url acima
+            //** ABRINDO A CONEXÃO PARA A URL CITADA
             HttpURLConnection conexao = (HttpURLConnection) url.openConnection();
 
-            //crinado um stream para os dados que estao chegando da api
+            //** CRIANDO UM STREAM (FLUXO) PARA OS DADOS QUE ESTÃO CHEGANDO DA API
             InputStream inputStream = conexao.getInputStream();
 
-            //criando um leitor de stream
+            //** PRECISAMOS LER O STREM, ENTÃO CRIAMOS UM LEITOR PARA ELE
             InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
 
-            //lendo o stream atraves do bufferedreader
+            //** ATRAVÉS DE UM BUFFERREADER VAMOS LER O STREAM
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
-            String linha = "";
+            //**VAMOS ITERAR(REPETIR) O BUFFER PARA EXTRAIR UMA STRING COM O JSON
+            String linha ="";
 
             while(linha != null){
 
@@ -104,27 +105,4 @@ public class CarregarJogo extends AsyncTask {
     }
 
 
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
-
-        progressDialog = new ProgressDialog(context);
-        progressDialog.setTitle("Carregando Jogos");
-        progressDialog.setMessage("Carregando jogos.. Aguarde...");
-        progressDialog.show();
-
-
-    }
-
-    @Override
-    protected void onPostExecute(Object o) {
-
-        ArrayAdapter<Jogo> adpter = new ArrayAdapter<>(context, android.R.layout.simple_list_item_1, jogos);
-        MainActivity.listViewJogos.setAdapter(adpter);
-
-        progressDialog.dismiss();
-
-
-        super.onPostExecute(o);
-    }
 }

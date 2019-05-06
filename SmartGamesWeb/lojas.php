@@ -3,7 +3,7 @@
 <html lang="pt-br">
     <head>
         <title>
-            Acme - Nossas Lojas
+            SmartGames - Nossas Lojas
         </title>
         <meta charset="utf-8">
         <script src="js/jquery-1.9.1.min.js"></script>
@@ -16,28 +16,16 @@
         <div class="caixa_menu">
             <div class="header center">
                 <figure id="logo">
-                   <a href="acme.php"><img src="imagem/logo.png" alt="acme" title="acme" ></a>
+                   <a href="index.php"><img src="imagem/logo.png" alt="SmartGames" title="SmartGames" ></a>
                 </figure>
             
                 <nav id="menu">
                     <ul>
-                        <li><a href=atores.php>Ator do Mês</a></li>
+                        <li><a href=index.php>Home </a></li>
                         <li><a href=sobre.php>Sobre</a></li>
-                        <li><a href=promocoes.php>Promoções</a></li>
                         <li><a href=lojas.php>Lojas</a></li>
-                        <li><a href=filmeMes.php>Filme do Mês</a></li>
-                        <li><a href=faleConosco.php>Fale conosco</a></li>
                     </ul>
                 </nav>
-            
-                <div class="login"> Usuario:
-                    <input type=text name="txtUsuario" value=""> 
-                </div>
-                
-                <div class="login"> Senha:
-                    <input type="password" name="txtSenha" value=""> 
-                </div>
-                <div><input class="botaook" type="submit" name="btnSalvar" value="OK"></div>
             
             </div>
         </div>
@@ -59,19 +47,17 @@
             <nav class="menu_lateral">
                 <ul>
                     <li>Home</li>
-                    <li>Filmes</li>
-                    <li>Series</li>
-                    <li>Warner</li>
-                    <li>Disney</li>
+                    <li>Jogos</li>
+                    <li>Ps4</li>
+                    <li>X-Box</li>
+                    <li>Nintendo</li>
                     <li>Lançamentos</li>
-                    <li>Terror</li>
                     <li>Comedia</li>
                     <li>Drama</li>
                     <li>Suspense</li>
                     <li>Ficçao</li>
                     <li>Aventura</li>
                     <li>Ação</li>
-                    <li>Romance</li>
                     <li>Infantil</li>
                 </ul>
             </nav>
@@ -135,7 +121,7 @@
         <footer class="footer center">
             <div class="caixa_footer center">
             <figure class="logofooter">
-                <a href="acme.php"><img src="imagem/logo.png" alt="acme" title="acme"></a>
+                <a href="index.php"><img src="imagem/logo.png" alt="smartgames" title="smartgames"></a>
             </figure>
             <div class="dadosDescricao">
                 <h3>Contato</h3>

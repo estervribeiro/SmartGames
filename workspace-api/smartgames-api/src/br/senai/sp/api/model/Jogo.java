@@ -36,11 +36,11 @@ public class Jogo {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getDescriçao() {
+	public String getDescricao() {
 		return descricao;
 	}
-	public void setDescriçao(String descriçao) {
-		this.descricao = descriçao;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 	public String getLoja1() {
 		return loja1;
@@ -64,7 +64,7 @@ public class Jogo {
 	
 	@Override
 	public String toString() {
-		return "Jogo [codigo=" + codigo + ", nome=" + nome + ", descriçao=" + descricao + ", loja1=" + loja1
+		return "Jogo [codigo=" + codigo + ", nome=" + nome + ", descricao=" + descricao + ", loja1=" + loja1
 				+ ", loja2=" + loja2 + ", preco=" + preco + "]";
 	}
 	

@@ -14,7 +14,7 @@ table{
 }
 
 body{
-    background-color: #1a1b1c !important;
+    background-color: #ffffff !important;
 }
 
 
@@ -67,21 +67,21 @@ a:hover{
     height: 130px;
     z-index: 999;
     position: fixed;
-    background-color: #1a1b1c;
+    background-color: #ffffff;
 }
 
 .header{
     width: 1400px;
     height: 130px;
     box-sizing: border-box;
-    background-color: #1a1b1c;
+    background-color: #ffffff;
 }
 
 #logo{
     
     width: 150px;
     height: 120px;
-    background-color: #1a1b1c;
+    background-color: #ffffff;
     float: left;
     margin-right: 0px;
     margin-left: 20px; 
@@ -96,7 +96,7 @@ a:hover{
     #menu{
         width: 700px;
         height: 90px;
-        background-color:#1a1b1c;
+        background-color:#ffffff;
         float: left;
         box-sizing: border-box;
         margin-top: 25px;
@@ -115,26 +115,26 @@ a:hover{
         list-style: none;
         float: left;
         margin-right: 20px;
-        background-color: #1a1b1c;
-        color: #ffffff;
+        background-color: #ffffff;
+        color: #000000;
         font-size: 18px;
         text-align: center;
         box-sizing: border-box;
         padding-top: 30px;
     }
 #menu ul li:hover{
-    background-color: black;
+    background-color: white;
     transition: 0.2s;
     cursor: pointer;
-    border-bottom: solid 3px white;
-    border-right: solid 3px white;
+    border-bottom: solid 3px deepskyblue;
+    border-right: solid 3px deepskyblue;
     border-radius: 8px;
 }
 
 .login{
     width: 140px;
     height: 100px;
-    color: red;
+    color: white;
     float: left;
     font-size: 18px;
     box-sizing: border-box;
@@ -157,7 +157,7 @@ a:hover{
     margin-top: 60px;
     width: 1400px;
     height: 600px;
-    background-color: #1a1b1c;
+    background-color: #ffffff;
     z-index: 1;
 
 }
@@ -167,7 +167,7 @@ a:hover{
 .conteudo1{
     width: 1400px;
     min-height: 1000px;
-    background-color: #1a1b1c;
+    background-color: white;
     overflow: hidden;
     height: auto;
 }
@@ -177,9 +177,9 @@ a:hover{
 .menu_lateral{
     width: 200px;
     min-height: inherit;
-    background-color: #1a1b1c;
+    background-color: #ffffff;
     float: left;
-    border-right: solid 1px red;
+    border-right: solid 1px deepskyblue;
 
 }
 
@@ -196,8 +196,8 @@ a:hover{
         height: inherit;
         list-style: none;
         margin-right: 10px;
-        background-color: red;
-        color: white;
+        background-color: deepskyblue;
+        color: black;
         font-size: 20px;
         margin-top: 10px;
         text-align: center;
@@ -205,21 +205,21 @@ a:hover{
         padding-top: 10px;
     }
 
-/* CATALOGO DE FILMES */
+/* CATALOGO DE Jogos */
 
 .caixa_catalogo{
     width: 1195px;
     min-height: 1000px;
-    background-color: #1a1b1c;
+    background-color: white;
     float: left;
     
 }
 .catalogo{
     width: 250px;
     height: 350px;
-    background-color: #1a1b1c;
-    border-right: 3px groove red;
-    border-bottom: 3px groove red;
+    background-color: white;
+    border-right: 3px groove deepskyblue;
+    border-bottom: 3px groove deepskyblue;
     float: left;
     margin-left: 100px;
     margin-bottom: 50px;
@@ -229,7 +229,7 @@ a:hover{
     width: 230px;
     margin-left: 10px;
     height: 155px;
-    background-color: #383535;
+    background-color: #b7d2ff;
     border-radius: 10px;
 
     
@@ -249,7 +249,7 @@ a:hover{
 .descricao p{
     text-align: center;
     font-size: 15px;
-    color: white;
+    color: black;
     padding-top: 10px;
     box-sizing: border-box;
     
@@ -257,7 +257,7 @@ a:hover{
 
 .detalhes{
     margin-left: 175px;
-    color: red !important;
+    color: black !important;
 }
 
 
@@ -268,7 +268,7 @@ a:hover{
 .caixa_lojas{
     width: 1195px;
     min-height: 1000px;
-    background-color: #1a1b1c;
+    background-color: #b7d2ff ;
     float: left; 
     
 }
@@ -278,14 +278,14 @@ a:hover{
     height: 300px;
     margin-top: 50px;
     text-align: center;
-    color: red;
-    border-bottom: double 1px red;
+    color: black;
+    border-bottom: double 1px deepskyblue;
 }
 
 .unidade{
     width: 400px;
     height: 50px;
-    border-bottom: double 2px red;
+    border-bottom: double 2px deepskyblue;
 }
 
 .endereco{
@@ -309,122 +309,6 @@ a:hover{
     float: left;
 }
 
-/* ATORES EM DESTAQUES  */
-
-.caixa_atores{
-    width: 1195px;
-    min-height: 1000px;
-    background-color: #1a1b1c;
-    float: left;
-    height: auto;
-}
-
-.holofote img{
-    width: 1150px;
-    height: 800px;
-    position: absolute;
-}
-.nome_ator{
-    color: white;
-    -webkit-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
--moz-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
-position: absolute;
-    font-size: 80px;
-    margin-top: 20px;
-    margin-left: 370px;
-}
-
-.ator img{
-    width: 500px;
-    height: 500px;
-    z-index: 1;
-    border-radius: 50%;
-    margin-top: 250px;
-    margin-left: 320px;
-    -webkit-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
--moz-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
-
-}
-.coroa img{
-    width: 500px;
-    height: 100px;
-    z-index: 1;
-    margin-top: 140px;
-    margin-left: 320px;
-}
-
-
-.descricao_ator{
-    width: 1100px;
-    height: 500px;
-    background-color: #1a1b1c;
-    margin-top: 900px;
-    -webkit-box-shadow: 2px 0px 22px 12px rgba(15,15,4,1);
--moz-box-shadow: 2px 0px 22px 12px rgba(15,15,4,1);
-box-shadow: 2px 0px 22px 12px rgba(15,15,4,1);
-    border-radius: 10px;
-    margin-bottom: 50px;
-}
-
-.descricao_ator img{
-    margin-top: 10px;
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    
-}
-
-.imagem{
-    width:400px;
-    height: 500px;
-    float: left;
-}
-
-.texto{
-    width: 700px;
-    height:500px;
-    float: left;
-    text-align: justify;
-    font-size: 20px;
-    line-height:38px; 
-    color: white;
-    box-sizing: border-box;
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    
-}
-
-
-
-/* FILME DO MES   */
-
-.nome_filme{
-    color: white;
-    -webkit-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
--moz-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
-position: absolute;
-    font-size: 80px;
-    margin-top: 20px;
-    margin-left: 465px; 
-}
-
-.descricao_ator img{
-    margin-top: 40px;
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
-    
-}
-
-.imagem_filme_destaque{
-    width:400px;
-    height:600px;
-    float: left;
-}
 
 
 
@@ -433,7 +317,7 @@ position: absolute;
 .caixasobre{
     width: 1195px;
     min-height: 1000px;
-    background-color: #1a1b1c;
+    background-color: white;
     float: left;
     height: auto;
     
@@ -442,7 +326,7 @@ position: absolute;
 .quemsomos{
     width: 1000px;
     height: 300px;
-    background-color: #1a1b1c;
+    background-color: #b7d2ff;
     -webkit-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
 -moz-box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
 box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
@@ -484,127 +368,18 @@ box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
 }
 
 
-/* PROMOÇÂOOOO */
-
-.caixa_promocao{
-    width: 1195px;
-    min-height: 1000px;
-    background-color: #1a1b1c;
-    float: left;
-    height: auto;
-}
-
-.promocao{
-    width: 300px;
-    height: 450px;
-    background-color: #1a1b1c;
-    border-right: 3px groove red;
-    border-bottom: 3px groove red;
-    margin-top: 50px;
-    margin-left: 90px;
-    float: left;
-    color: white;
-}
-
-.descricao-promocao{
-    width: 250px;
-    height: 200px;
-    background-color:#383535;
-    margin-left: 30px;
-    box-sizing: border-box;
-    padding-top: 10px;
-    border-radius: 10px;
-    color: red;
-}
-
-.imagem_promocao img{
-    width: 200px;
-    height: 200px;
-    background-color: #1a1b1c;
-    margin-left: 20px;
-}
-
-.nomedofilme{
-    text-align: center;
-    font-size: 30px;
-    color: black;
-    font-weight: bold;
-    color: white;
-}
-
-.preco-antigo{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 10px;
-    color: grey;
-    text-decoration-line: line-through;
-}
-
-.preco-novo{
-    text-align: center;
-    font-size: 40px;
-    margin-top: 10px;
-    color: white;
-
-    
-}
-/* FALE CONOSCO */
-
-.caixa_formulario{
-    width: 1195px;
-    min-height: 1000px;
-    background-color: #1a1b1c;
-    float: left;
-    height: auto;
-}
-
-.titulo-pagina{
-    width: inherit;
-    height: 150px;
-    font-size: 50px;
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.formulario{
-    margin-left: auto;
-    margin-right: auto;    
-}
-
-.tabelaDados{
-    width: 700px;
-    min-height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    border: none;
-}
-
-.areatxt{
-    width: 400px;
-    height: 40px;
-    border-radius: 6px;
-}
-
-.btnSalvar{
-    width: 80px;
-    height: 50px;
-    border-radius: 6px;
-
-}
 
 /*  RODAPÈÈÈÈ */
 .footer{
     width: 100%;
     height: 200px;
-    background-color: black;
+    background-color: #b7d2ff;
 }
 
 .caixa_footer{
     width: 1500px;
     height: 200px;
-    background-color: black;
+    background-color: #b7d2ff;
 }
 
 
@@ -622,7 +397,7 @@ box-shadow: 10px 9px 43px 6px rgba(0,0,0,0.72);
     width: 200px;
     height: 150px;
     float: left;
-    color: red;
+    color: black;
     margin-right: 10px;
     
 }

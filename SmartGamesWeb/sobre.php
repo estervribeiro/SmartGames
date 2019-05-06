@@ -3,7 +3,7 @@
 <html lang="pt-br">
     <head>
         <title>
-            Acme - Sobre
+            SmartGames - Sobre
         </title>
         <meta charset="utf-8">
         <script src="js/jquery-1.9.1.min.js"></script>
@@ -16,28 +16,16 @@
         <div class="caixa_menu">
             <div class="header center">
                 <figure id="logo">
-                   <a href="acme.php"><img src="imagem/logo.png" alt="acme" title="acme" ></a>
+                   <a href="index.php"><img src="imagem/logo.png" alt="SmartGames" title="SmartGames" ></a>
                 </figure>
             
                 <nav id="menu">
                     <ul>
-                        <li><a href=atores.php>Ator do Mês</a></li>
+                        <li><a href=index.php>Home</a></li>
                         <li><a href=sobre.php>Sobre</a></li>
-                        <li><a href=promocoes.php>Promoções</a></li>
                         <li><a href=lojas.php>Lojas</a></li>
-                        <li><a href=filmeMes.php>Filme do Mês</a></li>
-                        <li><a href=faleConosco.php>Fale conosco</a></li>
                     </ul>
                 </nav>
-            
-                <div class="login"> Usuario:
-                <input class="logintxt" type=text name="txtUsuario" value="" size="20"> 
-                </div>
-                
-                <div class="login"> Senha:
-                <input class="logintxt" type="password" name="txtSenha" value="" size="20"> 
-                </div>
-                <div><input class="botaook" type="submit" name="btnSalvar" value="OK"></div>
             
             </div>
         </div>
@@ -45,7 +33,7 @@
           <div class="oculta">
         </div>
         <div class="caixa_slider center">
-                <?php include("slidepromocao.php")?>
+                <?php include("slide.php")?>
         </div>
         <!-- CONTEUDO 1 //DIV MENU LATERAL-->
         <div class="conteudo1 center">
@@ -59,19 +47,17 @@
             <nav class="menu_lateral">
                 <ul>
                     <li>Home</li>
-                    <li>Filmes</li>
-                    <li>Series</li>
-                    <li>Warner</li>
-                    <li>Disney</li>
+                    <li>Jogos</li>
+                    <li>Ps4</li>
+                    <li>X-Box</li>
+                    <li>Nintendo</li>
                     <li>Lançamentos</li>
-                    <li>Terror</li>
                     <li>Comedia</li>
                     <li>Drama</li>
                     <li>Suspense</li>
                     <li>Ficçao</li>
                     <li>Aventura</li>
                     <li>Ação</li>
-                    <li>Romance</li>
                     <li>Infantil</li>
                 </ul>
             </nav>
@@ -80,14 +66,14 @@
                 <div class="quemsomos">
                     <div class="imagem-sobre">
                     <figure>
-                        <img src="imagem/logo.png" alt="acme" title="acme" >
+                        <img src="imagem/logo.png" alt="SmartGames" title="SmartGames" >
                     </figure>
                     </div>
                     <div class="titulo-sobre">
                         Quem Somos
                     </div>
                     <div class="texto-sobre">
-                        <p>A Acme Tunes é a maior e mais tradicional rede especializada em filmes do estado. A empresa entrou no mercado em 2000, e hoje, com mais de 15 anos de experiência. Para expandir a marca, iniciou em 2008 o processo de franquia e, após 6 anos, temos diversas franquias em operação nos melhores shoppings situados em São Paulo.</p>
+                        <p>A SmartGames é a maior e mais tradicional rede especializada em jogos do estado. A empresa entrou no mercado em 2000, e hoje, com mais de 15 anos de experiência. Para expandir a marca, iniciou em 2008 o processo de franquia e, após 6 anos, temos diversas franquias em operação nos melhores shoppings situados em São Paulo.</p>
                     </div>
                 </div>
                 <div class="quemsomos">
@@ -100,7 +86,7 @@
                         Missão
                     </div>
                     <div class="texto-sobre">
-                        <p>Oferecer uma grande variedade de filmes e itens relacionados, através de um excelente atendimento em um ambiente inovador e acolhedor nas lojas físicas e site.</p>
+                        <p>Oferecer uma grande variedade de jogos e itens relacionados, através de um excelente atendimento em um ambiente inovador e acolhedor nas lojas físicas e site.</p>
                     </div>
                 </div>
                 <div class="quemsomos">
@@ -113,7 +99,7 @@
                         Visão
                     </div>
                     <div class="texto-sobre">
-                        <p>Se tornar a principal marca especializada em filmes, tanto em sua rede de lojas quanto no e-commerce, sendo referência para o segmento no Brasil.</p>
+                        <p>Se tornar a principal marca especializada em jogos, tanto em sua rede de lojas quanto no e-commerce, sendo referência para o segmento no Brasil.</p>
                     </div>
                 </div>
                 <div class="quemsomos">
@@ -142,14 +128,14 @@
        <footer class="footer center">
             <div class="caixa_footer center">
             <figure class="logofooter">
-                <a href="acme.php"><img src="imagem/logo.png" alt="logo" title="logo"></a>
+                <a href="acme.php"><img src="imagem/logo.png" alt="SmartGames" title="SmartGames"></a>
             </figure>
             <div class="dadosDescricao">
                 <h3>Contato</h3>
                 <p>Av. Luis Carlos Berrini, nº 666.</p>
                 <p>São Paulo - SP</p>
                 <p> +55 11 6753-6564</p>
-                <p>acme@acme.com</p>
+                <p>SmartGames@SmartGames.com</p>
             </div>
             <div class="dadosDescricao">
                 <h3>Sobre</h3>

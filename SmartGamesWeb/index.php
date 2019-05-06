@@ -1,4 +1,14 @@
 
+<?php
+
+//conexão com o banco 
+require_once('bd/conexao.php');
+$conexao = conexaoMysql();
+
+
+?>
+
+
 <!doctype html>
 <html lang="pt-br">
     <head>
@@ -16,10 +26,11 @@
         <div class="caixa_menu center">
             <div class="header center">
                 <figure id="logo">
-                   <a href="index.php"><img src="imagem/logo.png" alt="acme" title="acme" ></a>
+                   <a href="index.php"><img src="imagem/logo.png" alt="smartgames" title="samrtgames" ></a>
                 </figure>
                 <nav id="menu">
                     <ul>
+                        <li><a href=index.php>Home</a></li>
                         <li><a href=sobre.php>Sobre</a></li>
                         <li><a href=lojas.php>Lojas</a></li>
                     </ul>
@@ -44,19 +55,17 @@
             <nav class="menu_lateral">
                 <ul>
                     <li>Home</li>
-                    <li>Filmes</li>
-                    <li>Series</li>
-                    <li>Warner</li>
-                    <li>Disney</li>
+                    <li>Jogos</li>
+                    <li>Ps4</li>
+                    <li>X-Box</li>
+                    <li>Nintendo</li>
                     <li>Lançamentos</li>
-                    <li>Terror</li>
                     <li>Comedia</li>
                     <li>Drama</li>
                     <li>Suspense</li>
                     <li>Ficçao</li>
                     <li>Aventura</li>
                     <li>Ação</li>
-                    <li>Romance</li>
                     <li>Infantil</li>
                     
                 </ul>
@@ -64,92 +73,40 @@
             
             
             <div class="caixa_catalogo">
+                <!--  codigo php para puxar dados do banco -->
+                <?php 
+                    
+                    $sql ="SELECT * FROM tbl_jogos";
+                
+                    //pegando os dados do banco e retornando eles em uma matriz de dados
+                    $select = mysqli_query($conexao, $sql);
+            
+                    while($rsjogos = mysqli_fetch_array($select)){
+                ?>
+                
                 <div class="catalogo">
                     <figure class="imagem_filme">
-                        <img src="imagem/21307-cartaz.jpg" alt="Aranhaverso" title="Aranhaverso" >
+                        <img src="<?php echo($rsjogos['imagem']);?>" alt="Aranhaverso" title="Aranhaverso" >
                      </figure>
-                    <div class="descricao">
-                        <p class="titulo-preco">Aranhaverso</p>
-                        <p> Miles Morales, um jovem negro do Brooklyn, se torna o Homem-Aranha</p>
-                        <p class="titulo-preco"> R$ 59,90</p>
-                        <p class="detalhes">Detalhes</p>
-                    </div>
-                </div>
-                <div class="catalogo">
-            
-                        <figure class="imagem_filme">
-                            <img src="imagem/20542-cartaz.jpg" alt="Aquaman" title="Aquaman" >
-                        </figure>
-                        <div class="descricao">
-                            <p class="titulo-preco">Aquaman</p>
-                            <p> Aquaman aprende que não pode fazer tudo sozinho em uma jornada em busca de um algo para Atlantis</p>
-                            <p class="titulo-preco"> R$ 59,90</p>
-                            <p class="detalhes">Detalhes</p>
-                        </div>
-                 
-                </div>
-                <div class="catalogo">
-                        <figure class="imagem_filme">
-                            <img src="imagem/21959-cartaz.jpg" alt="Como treinar o seu dragão 3" title="Como treinar o seu dragão 3" >
-                        </figure>
-                        <div class="descricao">
-                            <p class="titulo-preco">Como treinar o seu dragão</p>
-                            <p>Soluço busca realizar seu sonho de encontrar um lar onde os dragões possam viver em paz</p>
-                            <p class="titulo-preco"> R$ 59,90</p>
-                            <p class="detalhes">Detalhes</p>
-                        </div>
-                </div>
-                 <div class="catalogo">
-               
-                        <figure class="imagem_filme">
-                            <img src="imagem/aladin.jpg" alt="aladin" title="aladin" >
-                        </figure>
-                        <div class="descricao">
-                            <p class="titulo-preco">Aladin</p>
-                            <p> Miles Morales, um jovem negro do Brooklyn, se torna o Homem-Aranha</p>
-                            <p class="titulo-preco"> R$ 59,90</p>
-                            <p class="detalhes">Detalhes</p>
-                        </div>
-                   
-                </div>
-                <div class="catalogo">
-           
-                        <figure class="imagem_filme">
-                            <img src="imagem/8426_medio.jpg" alt="Wifi - Ralph" title="Wifi - Ralph">
-                        </figure>
-                        <div class="descricao">
-                            <p class="titulo-preco">Wifi - Ralph</p>
-                            <p>Ralph e Vanellope, sua companheira atrapalhada, iniciam mais uma aventura</p>
-                            <p class="titulo-preco"> R$ 59,90</p>
-                            <p class="detalhes">Detalhes</p>
-                        </div>
-                </div>
-                <div class="catalogo">
                     
-                        <figure class="imagem_filme">
-                            <img src="imagem/mulher-maravilha-capa.jpg" alt="mulher-maravilha" title="mulher-maravilha">
-                        </figure>
-                        <div class="descricao">
-                            <p class="titulo-preco"> Wonder Woman</p>
-                            <p>Treinada para ser guerreira, Diana nunca saiu do seu reino </p>
-                            <p class="titulo-preco"> R$ 59,90</p>
-                            <p class="detalhes">Detalhes</p>
-                        </div>
+                    <div class="descricao">
+                        
+                        <p class="titulo-preco"> <?php echo($rsjogos['nome']); ?> </p>
+                        
+                        <p><?php echo($rsjogos['descricao']); ?></p>
+                        
+                        <p class="titulo-preco"> R$ <?php echo($rsjogos['preco']); ?></p>
+                        
+                        <p class="detalhes">Detalhes</p>
+                        
+                    </div>
+                
                 </div>
-                <div class="catalogo">
-        
-                        <figure class="imagem_filme">
-                            <img src="imagem/filmes_9510_moanaposter.jpg" alt="moana" title="moana">
-                        </figure>
-                        <div class="descricao">
-                            <p class="titulo-preco">Moana</p>
-                            <p>Uma jovem embarca, com a ajuda de um semi-deus, em uma viagem que pode mudar a vida de todos.</p>
-                            <p class="titulo-preco"> R$ 59,90</p>
-                            <p class="detalhes">Detalhes</p>
-                        </div>
-                </div>
-                 
-
+                
+                <?php
+                    }
+                ?>
+                
             </div>
         </div>
 
@@ -157,14 +114,14 @@
        <footer class="footer center">
             <div class="caixa_footer center">
             <figure class="logofooter">
-                <a href="acme.php"><img src="imagem/logo.png" alt="acme" title="acme" ></a>
+                <a href="index.php"><img src="imagem/logo.png" alt="smartgames" title="smartgames" ></a>
             </figure>
             <div class="dadosDescricao">
                 <h3>Contato</h3>
                 <p>Av. Luis Carlos Berrini, nº 666.</p>
                 <p>São Paulo - SP</p>
                 <p> +55 11 6753-6564</p>
-                <p>acme@acme.com</p>
+                <p>smartgames@smartgames.com</p>
             </div>
             <div class="dadosDescricao">
                 <h3>Sobre</h3>
@@ -178,7 +135,7 @@
                 <p> Meus pedidos</p>
                 <p> Lista de Desejos</p>
                 <p> Suporte</p>
-                <p> Meus filmes</p>
+                <p> Meus Jogos</p>
             </div>
               <div class="dadosDescricao">
                 <h3>Localização</h3>
