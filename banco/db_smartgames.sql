@@ -7,7 +7,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
- SET NAMES utf8mb4 ;
+ SET NAMES utf8 ;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -26,8 +26,7 @@ CREATE TABLE `tbl_jogos` (
   `codigo` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   `descricao` varchar(256) NOT NULL,
-  `loja1` varchar(100) NOT NULL,
-  `loja2` varchar(100) DEFAULT NULL,
+  `loja` varchar(100) NOT NULL,
   `preco` decimal(6,2) NOT NULL,
   `imagem` varchar(100) NOT NULL,
   PRIMARY KEY (`codigo`)
@@ -40,7 +39,7 @@ CREATE TABLE `tbl_jogos` (
 
 LOCK TABLES `tbl_jogos` WRITE;
 /*!40000 ALTER TABLE `tbl_jogos` DISABLE KEYS */;
-INSERT INTO `tbl_jogos` VALUES (1,'fortnite','joguinho','augusta','sao Paulo',5.90,'imagem/fortnite.jpg'),(3,'God of War','God of War é um jogo eletrônico de ação-aventura desenvolvido pela Santa Monica Studio e publicado pela Sony.','Av. Regente Feijó, 1739 - Loja TL-132/133 - Nível Tulipa - Jardim Anália Franco','Av. Rebouças, 3970 - Loja 343E/344E - 2º Piso - Pinheiros',105.60,'imagem/godofwar.jpg'),(4,'Call of Duty','jogo eletrônico de tiro distribuído pela Activision para PlayStation 4, Xbox One e Microsoft Windows.','Av. Regente Feijó, 1739 - Loja TL-132/133 - Nível Tulipa - Jardim Anália Franco','Av. Coronel Fernando Ferreira Leite, 1540 - loja 154 - Nível Califórnia - Jd Califórnia',200.00,'imagem/callofduty.png');
+INSERT INTO `tbl_jogos` VALUES (1,'fortnite','joguinho','Sao Paulo',5.90,'imagem/fortnite.jpg'),(3,'God of War','God of War é um jogo eletrônico de ação-aventura desenvolvido pela Santa Monica Studio e publicado pela Sony.','Sao paulo',105.60,'imagem/godofwar.jpg'),(4,'Call of Duty','jogo eletrônico de tiro distribuído pela Activision para PlayStation 4, Xbox One e Microsoft Windows.','Augusta',200.00,'imagem/callofduty.png');
 /*!40000 ALTER TABLE `tbl_jogos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-06 11:10:25
+-- Dump completed on 2019-05-07 11:13:28

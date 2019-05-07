@@ -19,8 +19,7 @@ public class Jogo {
 	@NotNull
 	private String nome;
 	private String descricao;
-	private String loja1;
-	private String loja2;
+	private String loja;
 	private String preco;
 	
 	
@@ -42,31 +41,26 @@ public class Jogo {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public String getLoja1() {
-		return loja1;
+	public String getLoja() {
+		return loja;
 	}
-	public void setLoja1(String loja1) {
-		this.loja1 = loja1;
+	public void setLoja(String loja) {
+		this.loja = loja;
 	}
-	public String getLoja2() {
-		return loja2;
-	}
-	public void setLoja2(String loja2) {
-		this.loja2 = loja2;
-	}
+	
 	public String getPreco() {
 		return preco;
 	}
 	public void setPreco(String preco) {
 		this.preco = preco;
 	}
-	
-	
 	@Override
 	public String toString() {
-		return "Jogo [codigo=" + codigo + ", nome=" + nome + ", descricao=" + descricao + ", loja1=" + loja1
-				+ ", loja2=" + loja2 + ", preco=" + preco + "]";
+		return "Jogo [codigo=" + codigo + ", nome=" + nome + ", descricao=" + descricao + ", loja=" + loja + ", preco="
+				+ preco + "]";
 	}
+	
+	
 	
 
 }

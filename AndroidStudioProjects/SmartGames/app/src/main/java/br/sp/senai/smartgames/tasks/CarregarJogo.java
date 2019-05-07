@@ -1,10 +1,8 @@
 package br.sp.senai.smartgames.tasks;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.ArrayAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,7 +27,6 @@ public class CarregarJogo extends AsyncTask {
     private List<Jogo> jogos;
     private Context context;
 
-    private ProgressDialog progressDialog;
 
     public CarregarJogo(Context context){
         this.context = context;
@@ -42,10 +39,12 @@ public class CarregarJogo extends AsyncTask {
 
         try {
             //criando a url usada para se conectar com a api
-            URL url = new URL("http://10.107.144.11:8080/jogos");
+            URL url = new URL("http://10.107.144.26:8080/jogos");
 
             //** ABRINDO A CONEXÃO PARA A URL CITADA
             HttpURLConnection conexao = (HttpURLConnection) url.openConnection();
+
+            conexao.connect();
 
             //** CRIANDO UM STREAM (FLUXO) PARA OS DADOS QUE ESTÃO CHEGANDO DA API
             InputStream inputStream = conexao.getInputStream();
@@ -69,6 +68,8 @@ public class CarregarJogo extends AsyncTask {
             }
 
 
+
+
             //transformando o json em array
             JSONArray jsonArray = new JSONArray(dados);
             jogos = new ArrayList<>();
@@ -81,8 +82,7 @@ public class CarregarJogo extends AsyncTask {
                 jogo.setCodigo(jo.getInt("codigo"));
                 jogo.setNome(jo.getString("nome"));
                 jogo.setDescricao(jo.getString("descricao"));
-                jogo.setLoja1(jo.getString("loja1"));
-                jogo.setLoja2(jo.getString("loja2"));
+                jogo.setLoja(jo.getString("loja"));
                 jogo.setPreco(jo.getString("preco"));
 
                 jogos.add(jogo);

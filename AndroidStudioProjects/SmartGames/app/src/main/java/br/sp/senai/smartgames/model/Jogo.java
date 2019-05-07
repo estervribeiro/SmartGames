@@ -7,8 +7,7 @@ public class Jogo implements Serializable {
     private int codigo;
     private String nome;
     private String descricao;
-    private String loja1;
-    private String loja2;
+    private String loja;
     private String preco;
 
     public int getCodigo() {
@@ -35,20 +34,12 @@ public class Jogo implements Serializable {
         this.descricao = descricao;
     }
 
-    public String getLoja1() {
-        return loja1;
+    public String getLoja() {
+        return loja;
     }
 
-    public void setLoja1(String loja1) {
-        this.loja1 = loja1;
-    }
-
-    public String getLoja2() {
-        return loja2;
-    }
-
-    public void setLoja2(String loja2) {
-        this.loja2 = loja2;
+    public void setLoja(String loja) {
+        this.loja = loja;
     }
 
     public String getPreco() {
