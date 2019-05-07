@@ -26,7 +26,7 @@ $conexao = conexaoMysql();
         <div class="caixa_menu center">
             <div class="header center">
                 <figure id="logo">
-                   <a href="index.php"><img src="imagem/logo.png" alt="smartgames" title="samrtgames" ></a>
+                   <a href="index.php"><img src="imagem/logo.png" alt="Smart Games" title="Smart Games" ></a>
                 </figure>
                 <nav id="menu">
                     <ul>
@@ -34,7 +34,9 @@ $conexao = conexaoMysql();
                         <li><a href=sobre.php>Sobre</a></li>
                         <li><a href=lojas.php>Lojas</a></li>
                     </ul>
+                    
                 </nav>
+                
             </div>
         </div>
         <!-- AREA SLIDER-->
@@ -85,8 +87,8 @@ $conexao = conexaoMysql();
                 ?>
                 
                 <div class="catalogo">
-                    <figure class="imagem_filme">
-                        <img src="<?php echo($rsjogos['imagem']);?>" alt="Aranhaverso" title="Aranhaverso" >
+                    <figure class="imagem_jogo">
+                        <img src="<?php echo($rsjogos['imagem']);?>" alt="<?php echo($rsjogos['nome']); ?>" title="<?php echo($rsjogos['nome']); ?>" >
                      </figure>
                     
                     <div class="descricao">
@@ -114,7 +116,7 @@ $conexao = conexaoMysql();
        <footer class="footer center">
             <div class="caixa_footer center">
             <figure class="logofooter">
-                <a href="index.php"><img src="imagem/logo.png" alt="smartgames" title="smartgames" ></a>
+                <a href="index.php"><img src="imagem/logo.png" alt="Smart Games" title="Smart Games" ></a>
             </figure>
             <div class="dadosDescricao">
                 <h3>Contato</h3>

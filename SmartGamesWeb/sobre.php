@@ -149,7 +149,7 @@
                 <p> Meus pedidos</p>
                 <p> Lista de Desejos</p>
                 <p> Suporte</p>
-                <p> Meus filmes</p>
+                <p> Meus jogos</p>
             </div>
               <div class="dadosDescricao">
                 <h3>Localização</h3>

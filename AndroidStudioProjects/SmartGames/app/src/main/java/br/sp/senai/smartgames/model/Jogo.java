@@ -52,8 +52,8 @@ public class Jogo implements Serializable {
 
     @Override
     public String toString() {
-        return "Jogo{" +
-                "nome='" + nome + '\'' +
-                '}';
+
+        return nome;
+
     }
 }

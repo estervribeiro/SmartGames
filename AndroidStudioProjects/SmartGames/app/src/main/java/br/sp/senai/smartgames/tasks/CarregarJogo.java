@@ -1,8 +1,10 @@
 package br.sp.senai.smartgames.tasks;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.ArrayAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -39,12 +41,10 @@ public class CarregarJogo extends AsyncTask {
 
         try {
             //criando a url usada para se conectar com a api
-            URL url = new URL("http://10.107.144.26:8080/jogos");
+            URL url = new URL("http://10.107.134.2:8080/jogos");
 
             //** ABRINDO A CONEXÃO PARA A URL CITADA
             HttpURLConnection conexao = (HttpURLConnection) url.openConnection();
-
-            conexao.connect();
 
             //** CRIANDO UM STREAM (FLUXO) PARA OS DADOS QUE ESTÃO CHEGANDO DA API
             InputStream inputStream = conexao.getInputStream();
@@ -100,9 +100,18 @@ public class CarregarJogo extends AsyncTask {
             e.printStackTrace();
         }
 
-
-        return null;
+        return jogos;
     }
 
 
+    @Override
+    protected void onPostExecute(Object o) {
+
+        ArrayAdapter<Jogo> adapter = new ArrayAdapter<Jogo>(context, android.R.layout.simple_list_item_1, jogos);
+        MainActivity.listViewJogos.setAdapter(adapter);
+
+
+
+        super.onPostExecute(o);
+    }
 }

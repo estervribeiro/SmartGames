@@ -23,11 +23,11 @@ public class Jogo {
 	private String preco;
 	
 	
-	public Long getId() {
+	public Long getCodigo() {
 		return codigo;
 	}
-	public void setId(Long id) {
-		this.codigo = id;
+	public void setCodigo(Long codigo) {
+		this.codigo = codigo;
 	}
 	public String getNome() {
 		return nome;

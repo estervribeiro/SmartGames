@@ -30,7 +30,7 @@ CREATE TABLE `tbl_jogos` (
   `preco` decimal(6,2) NOT NULL,
   `imagem` varchar(100) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `tbl_jogos` (
 
 LOCK TABLES `tbl_jogos` WRITE;
 /*!40000 ALTER TABLE `tbl_jogos` DISABLE KEYS */;
-INSERT INTO `tbl_jogos` VALUES (1,'fortnite','joguinho','Sao Paulo',5.90,'imagem/fortnite.jpg'),(3,'God of War','God of War é um jogo eletrônico de ação-aventura desenvolvido pela Santa Monica Studio e publicado pela Sony.','Sao paulo',105.60,'imagem/godofwar.jpg'),(4,'Call of Duty','jogo eletrônico de tiro distribuído pela Activision para PlayStation 4, Xbox One e Microsoft Windows.','Augusta',200.00,'imagem/callofduty.png');
+INSERT INTO `tbl_jogos` VALUES (1,'FortNite','Fortnite é um jogo eletrônico multijogador online criado originalmente em 2011','Av. Rebouças, 3970 - Loja 343E/344E - 2º Piso - Pinheiros',5.90,'imagem/fortnite.jpg'),(3,'God of War','God of War é um jogo eletrônico de ação-aventura desenvolvido pela Santa Monica Studio e publicado pela Sony.','Av. Rebouças, 3970 - Loja 343E/344E - 2º Piso - Pinheiros',105.60,'imagem/godofwar.jpg'),(4,'Call of Duty','jogo eletrônico de tiro distribuído pela Activision para PlayStation 4, Xbox One e Microsoft Windows.','Av. Rebouças, 3970 - Loja 343E/344E - 2º Piso - Pinheiros',200.00,'imagem/callofduty.png'),(5,'Spider - Man','Marvel\'s Spider-Man é um jogo eletrônico de ação-aventura baseado no super-herói Homem-Aranha da Marvel Comics','Av. Rebouças, 3970 - Loja 343E/344E - 2º Piso - Pinheiros',159.99,'imagem/spider.png'),(6,'Grand Theft Auto V','Grand Theft Auto V é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games.','Av. Rebouças, 3970 - Loja 343E/344E - 2º Piso - Pinheiros',210.20,'imagem/gta.png'),(7,'Crash Bandicoot Remastered','Crash Bandicoot N. Sane Trilogy é uma compilação de jogos eletrônicos desenvolvida pela Vicarious Visions e publicada pela Activision.','Av. Rebouças, 3970 - Loja 343E/344E - 2º Piso - Pinheiros',199.99,'imagem/crash.png');
 /*!40000 ALTER TABLE `tbl_jogos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-07 11:13:28
+-- Dump completed on 2019-05-07 16:29:02
